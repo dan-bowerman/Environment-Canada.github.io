@@ -8,12 +8,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
+markdown: kramdown
+title : RAMP
 tagline: Site Tagline
 author :
-  name : Name Lastname
+  name : Environment Canada
   email : blah@email.test
-  github : username
+  github : Environment-Canada
   twitter : username
   feedburner : feedname
 
@@ -100,7 +101,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : ''
     getclicky :
       site_id : 
     mixpanel :
