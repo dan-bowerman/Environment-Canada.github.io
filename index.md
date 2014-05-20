@@ -1,9 +1,16 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: EC - RAMP
+tagline: Reusable Accessible Mapping Platform
 ---
 {% include JB/setup %}
+
+## What is the RAMP?
+
++ A collaborative open source project led by Environment Canada
++ Created by an award winning team for web mapping developers
+
+
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
