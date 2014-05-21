@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: index-en
 title: EC - RAMP
 tagline: Reusable Accessible Mapping Platform
 ---
