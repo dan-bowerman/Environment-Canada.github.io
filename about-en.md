@@ -5,6 +5,6 @@ tagline: Reusable Accessible Mapping Platform
 ---
 {% include JB/setup %}
 
-## About
+# About
 
 
