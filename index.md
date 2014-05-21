@@ -7,8 +7,6 @@ tagline: Reusable Accessible Mapping Platform
 
 ## What is the RAMP?
 
-+ A collaborative open source project led by Environment Canada
-+ Created by an award winning team for web mapping developers
 
 
 
