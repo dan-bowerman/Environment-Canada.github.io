@@ -9,6 +9,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 markdown: kramdown
+encoding: UTF-8
 title : RAMP
 tagline: Site Tagline
 author :
