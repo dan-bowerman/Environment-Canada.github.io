@@ -13,7 +13,12 @@ title: Documentation - ToC
 [{{ post.title }}]({{site.production_url}}{{ post.url }}){% endfor %}
 
 {% for page in site.pages %}
-[{{ page.title }}]({{site.production_url}}{{ page.url }})
+{% if page.categories == 'documentation' %}
+      	[{{ page.title }}]({{site.production_url}}{{ page.url }})      	
+      	{% endif %}
+
+
+
 {% endfor %}
 
 tags

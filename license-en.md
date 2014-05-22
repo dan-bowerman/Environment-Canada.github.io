@@ -1,6 +1,6 @@
 ---
 layout: index-en
-title: EC - RAMP
+title: License
 tagline: Reusable Accessible Mapping Platform
 ---
 {% include JB/setup %}
