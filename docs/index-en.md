@@ -1,6 +1,6 @@
 ---
 layout: index-en
-title: EC - RAMP
+title: Documentation - ToC
 ---
 {% include JB/setup %}
 
