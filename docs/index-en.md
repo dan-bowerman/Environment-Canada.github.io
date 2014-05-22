@@ -20,8 +20,8 @@ cat{% endfor %}
 {% for page in site.pages %}
 }
       	[{{ page.title }}]({{site.production_url}}{{ page.url }})      	
-      	page.categories
-		page.url
+      	{{page.categories}}
+		{{page.url}}
 
 
 
