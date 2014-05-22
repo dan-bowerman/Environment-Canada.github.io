@@ -7,6 +7,9 @@ title: Documentation - ToC
 {% include JB/categories_list %}
 
 ## Documentation
+{% for cat in site.categories %}
+cat{% endfor %}
+
 
 {% for page in site.categories.documentation %}
 [{{ page.title }}]({{site.production_url}}{{ page.url }}){% endfor %}
