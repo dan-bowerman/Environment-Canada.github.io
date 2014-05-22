@@ -1,6 +1,7 @@
 ---
 layout: index-en
 title: EC - RAMP
+category: Documentation 
 ---
 {% include JB/setup %}
 
