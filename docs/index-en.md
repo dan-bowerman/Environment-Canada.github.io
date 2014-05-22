@@ -18,9 +18,10 @@ cat{% endfor %}
 [{{ post.title }}]({{site.production_url}}{{ post.url }}){% endfor %}
 
 {% for page in site.pages %}
-{% if page.categories == 'documentation' %}
+}
       	[{{ page.title }}]({{site.production_url}}{{ page.url }})      	
-      	{% endif %}
+      	page.categories
+		page.url
 
 
 
