@@ -1,8 +1,19 @@
 ---
 layout: index-en
-title: EC - RAMP
+title: Feature Roadmap
 ---
 {% include JB/setup %}
 
-## Roadmap
+# Roadmap
 
+## Future milestones
+
+| Date (estimated) | Milestones
+|----+----|
+| 2014-06-20| Initial Release
+| | Setup GitHub Site
+| | Publish Documentation
+
+## Past milestones
+| Date| Milestones
+|----+----|
