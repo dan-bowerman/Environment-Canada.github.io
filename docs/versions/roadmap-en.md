@@ -8,13 +8,10 @@ title: Feature Roadmap
 
 ## Future milestones
 
-| Date (estimated) |+| Milestones
+| Date (estimated) | Milestones
 |----+----|
-| 2014-06-20|+| Initial Release
-| |+|Setup GitHub Site
-| |+|Publish Documentation
+| 2014-06-20| Initial Release
+| |Setup GitHub Site
+| |Publish Documentation
 
 ## Past milestones
-| Date| Milestones
-|----+----|
-| |
