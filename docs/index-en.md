@@ -6,7 +6,10 @@ title: EC - RAMP
 
 ## Documentation
 
-{% for page in site.pages.categories.Documentation %}
+{% for page in site.categories.DOCUMENTATION %}
 [{{ page.title }}]({{site.production_url}}{{ page.url }})
+{% endfor %}
+{% for post in site.categories.DOCUMENTATION %}
+[{{ post.title }}]({{site.production_url}}{{ post.url }})
 {% endfor %}
 
