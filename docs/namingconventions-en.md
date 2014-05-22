@@ -1,36 +1,44 @@
+---
+layout: index-en
+title: Naming Conventions
+---
+{% include JB/setup %}
+# RAMP Naming Conventions
+
+## Terms
 Resource dictionary = a singleton object that only contain read-only fields (in C# or Java, these would be classes that cannot be instantiated and only contain public static fields)
 
 Utilities = a singleton object that contain useful functions but does not contain any fields (in C# or Java, these would be classes that cannot be instantiated and only contain public static functions) 
 
 Singleton object = a singleton object that contains both fields and functions (in C# or Java, these would be classes that cannot be instantiated, have static fields, and static functions). These are the only objects can have states that change over time (e.g. Map can have different extents, Datagrid can have different points, whereas the Resource dictionary never changes, neither do the Utility classes).
 
-Module Path	Return Type	Preferred Arg Alias	Notes
-Folder: Modules	
-ramp/basemapselector	singleton object	BasemapSelector	
-ramp/bookmarklink	singleton object	BookmarkLink	
-ramp/datagrid	singleton object	Datagrid	
-ramp/datagridClickHandler	singleton object	DatagridClickHandler	
-ramp/ecdmp	singleton object	Ecdmp	
-ramp/eventManager	resource dictionary	EventManager	
-ramp/featureClickHandler	singleton object	FeatureClickHandler	
-ramp/featureHighlighter	singleton object	FeatureHighlighter	
-ramp/filterManager	singleton object	FilterManager	
-ramp/globalStorage	singleton object	GlobalStorage	
-ramp/graphicExtension	singleton object	GraphicExtension	
-ramp/map	singleton object	Map	
-ramp/maptips	singleton object	Maptips	
-ramp/navigation	singleton object	Navigation	
-ramp/quickzoom	class	Quickzoom	
-ramp/ramp	singleton object	Ramp	
-Folder: Utils	
-utils/array	utilities	UtilArray	
-utils/decorator	utilities	Decorator	
-utils/dictionary	utilities	UtilDict	
-utils/functionMangler	singleton object	FunctionMangler	
-utils/popupManager	? (singleton or utilities)	PopupManager	
-utils/prototype	singleton object	UtilPrototype	
-utils/url	class	UtilUrl	
-utils/util	utilities	UtilMisc	Misc = Miscellaenous
+|Module Path|	Return Type|	Preferred Arg Alias|	Notes
+|Folder: Modules	| | |
+|ramp/basemapselector| singleton object| BasemapSelector| 
+|ramp/bookmarklink| singleton object| BookmarkLink| 
+|ramp/datagrid| singleton object| Datagrid| 
+|ramp/datagridClickHandler| singleton object| DatagridClickHandler| 
+|ramp/ecdmp| singleton object| Ecdmp| 
+|ramp/eventManager| resource dictionary| EventManager| 
+|ramp/featureClickHandler| singleton object| FeatureClickHandler| 
+|ramp/featureHighlighter| singleton object| FeatureHighlighter| 
+|ramp/filterManager| singleton object| FilterManager| 
+|ramp/globalStorage| singleton object| GlobalStorage| 
+|ramp/graphicExtension| singleton object| GraphicExtension| 
+|ramp/map| singleton object| Map| 
+|ramp/maptips| singleton object| Maptips| 
+|ramp/navigation| singleton object| Navigation| 
+|ramp/quickzoom| class| Quickzoom| 
+|ramp/ramp| singleton object| Ramp| 
+|Folder: Utils| | | |
+|utils/array| utilities| UtilArray| 
+|utils/decorator| utilities| Decorator| 
+|utils/dictionary| utilities| UtilDict| 
+|utils/functionMangler| singleton object| FunctionMangler| 
+|utils/popupManager| ? (singleton or utilities)| PopupManager| 
+|utils/prototype| singleton object| UtilPrototype| 
+|utils/url| class| UtilUrl| 
+|utils/util| utilities| UtilMisc| Misc = Miscellaenous
 
 
 
@@ -43,6 +51,7 @@ Why everything is singleton in RAMP:
 How to convert singleton to classes that allow more than one instance:
 If we ever do need to convert back to classes that allow multiple objects, the conversion would not be difficult. 
 This is an example of a really simple singleton class
+`
 define(["util/util"],
     function (UtilMisc) {
 
@@ -57,8 +66,9 @@ define(["util/util"],
             }
         };
     });
-
+`
 Usage (assume the singleton class is located at “modules/sample.js”):
+`
 define(["modules/sample"],
     function (Sample) {
 
@@ -67,8 +77,9 @@ define(["modules/sample"],
         Sample.bar(); // Returns 45
 
     });
-
+`
 Now to convert it into a class that can create multiple instances, we just need to define a constructor function and wrap it around our existing code:
+`
 define([“util/util”],
     function (UtilMisc) { 
         return {
@@ -85,16 +96,18 @@ define([“util/util”],
                     };
         };
     });
-
+`
 
 Note the only thing that was added is:
+`
 return {	     
     createNewInstance : function(args) {
         // Original code here
     }
 }
-
+`
 You could move the code in the init function into the createNewInstance function:
+`
 define([“util/util”],
     function (UtilMisc) { 
         return {
@@ -108,8 +121,9 @@ define([“util/util”],
                     };
         };
     });
-
+`
 Usage:
+`
 define([“modules/sample”],
     function (Sample) {
        
@@ -119,5 +133,5 @@ define([“modules/sample”],
 	a.bar(); // Returns 45
 	b.bar(); // Returns 50
     });
-
+`
 

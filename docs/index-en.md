@@ -6,3 +6,6 @@ title: EC - RAMP
 
 ## Documentation
 
+{% for page in site.pages %}
+<{{site.production_url}}{{ page.url }}>{% endfor %}
+
