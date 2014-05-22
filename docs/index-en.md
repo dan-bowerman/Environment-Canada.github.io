@@ -3,6 +3,7 @@ layout: index-en
 title: Documentation - ToC
 ---
 {% include JB/setup %}
+{% assign categories_list = site.categories %}
 {% include JB/categories_list %}
 
 ## Documentation

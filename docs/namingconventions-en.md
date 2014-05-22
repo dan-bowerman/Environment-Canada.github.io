@@ -3,6 +3,7 @@ layout: index-en
 title: Naming Conventions
 category: Documentation
 categories: [Documentation documentation]
+group: doc
 tags: doc
 ---
 {% include JB/setup %}
