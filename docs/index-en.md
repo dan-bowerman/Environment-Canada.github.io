@@ -11,17 +11,16 @@ title: Documentation - ToC
 cat{% endfor %}
 
 
-{% for page in site.categories[documentation] %}
+{% for page in site.categories[documentation %}
 [{{ page.title }}]({{site.production_url}}{{ page.url }}){% endfor %}
 
 {% for post in site.categories.documentation %}
 [{{ post.title }}]({{site.production_url}}{{ post.url }}){% endfor %}
 
 {% for page in site.pages %}
-}
+{% if {page.category} == 'documentation' %}
       	[{{ page.title }}]({{site.production_url}}{{ page.url }})      	
-      	{{page.categories}}
-		{{page.url}}
+      	{% endif %}
 
 
 
