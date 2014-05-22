@@ -134,4 +134,3 @@ define([“modules/sample”],
 	b.bar(); // Returns 50
     });
 `
-
