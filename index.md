@@ -5,47 +5,48 @@ tagline: Reusable Accessible Mapping Platform
 ---
 {% include JB/setup %}
 
+# Reusable Accessible Mapping Platform (RAMP) 
+
 ## What is the RAMP?
 
+* A collaborative open source project [led by Environment Canada] (http://ec.gc.ca)
+* Created by an [award winning] (http://www.directionsmag.com/pressreleases/environment-canada-takes-winning-approach-to-information-management/202953) team for web mapping developers
 
+## Key Resources
 
+* [Documentation](http://environment-canada.github.io/docs/index-en.html)
+* [Downloads](http://environment-canada.github.io/docs/versions/downloads-en.html)
+* [Examples](http://environment-canada.github.io/demos/index-en.html)
+* [Version history](http://environment-canada.github.io/docs/versions/index-en.html)
+* [Terms and conditions](http://environment-canada.github.io/license-en.html) (MIT license)
+* [Source code repository](https://github.com/Environment-Canada/RAMP-AF)
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+## Benefits
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+### Accessibility, Usability, and Interoperability
 
-## Update Author Attributes
+* Conforms to [WCAG 2.0](http://www.w3.org/TR/WCAG20/) level AA
+* Leverages [WAI-ARIA](http://www.w3.org/TR/wai-aria/) to further enhance accessibility
+* Iterative approach to design, adapting to change all the time
+* Built on [HTML5](http://www.w3.org/TR/html5/)
+* Supports a wide variety of browsers (IE, Firefox, Chrome, Safari, Opera)
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+### Themeable and Reusable
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+* Flexible framework that supports custom templates and widgets
+* Allows teams to reuse their work across multiple projects
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+### Reduces Development Costs
 
-    $ rm -rf _posts/core-samples
+* Provides with an out-of-the-box solution to reduce development costs
+* Avoids duplication of effort
+* Breeds better quality solutions by working with proven technology
 
-Here's a sample "posts list".
+### Inspiring Collaboration
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
+* Project managed on GitHub
+* External contributions welcome
+ * Share custom templates
+ * Report issues and suggestions
+ * Documentation
+ * Testing
