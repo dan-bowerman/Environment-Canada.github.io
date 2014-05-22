@@ -3,6 +3,7 @@ layout: index-en
 title: Documentation - ToC
 ---
 {% include JB/setup %}
+{% include JB/categories_list %}
 
 ## Documentation
 
