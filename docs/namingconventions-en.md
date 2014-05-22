@@ -3,6 +3,7 @@ layout: index-en
 title: EC - RAMP
 category: Documentation
 categories: Documentation documentation
+tags: doc
 ---
 {% include JB/setup %}
 

@@ -15,3 +15,7 @@ title: EC - RAMP
 {% for page in site.pages %}
 [{{ page.title }}]({{site.production_url}}{{ page.url }}){% endfor %}
 
+{% for post in site.tags.doc %}
+[{{ post.title }}]({{site.production_url}}{{ post.url }}){% endfor %}
+
+
