@@ -13,7 +13,10 @@ title: EC - RAMP
 [{{ post.title }}]({{site.production_url}}{{ post.url }}){% endfor %}
 
 {% for page in site.pages %}
-[{{ page.title }}]({{site.production_url}}{{ page.url }}){% endfor %}
+[{{ page.title }}]({{site.production_url}}{{ page.url }})
+{% endfor %}
+
+tags
 
 {% for post in site.tags.doc %}
 [{{ post.title }}]({{site.production_url}}{{ post.url }}){% endfor %}

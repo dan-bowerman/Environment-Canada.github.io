@@ -1,6 +1,6 @@
 ---
 layout: index-en
-title: EC - RAMP
+title: Naming Conventions
 category: Documentation
 categories: Documentation documentation
 tags: doc
