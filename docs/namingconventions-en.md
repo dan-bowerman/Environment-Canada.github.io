@@ -1,7 +1,7 @@
 ---
 layout: index-en
 title: Naming Conventions
-category: Documentation
+category: documentation
 categories: [documentation]
 group: doc
 tags: doc
