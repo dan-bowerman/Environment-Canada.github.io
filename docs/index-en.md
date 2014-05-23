@@ -11,7 +11,7 @@ title: Documentation - ToC
 
 {% for page in site.pages %}
 {{page.categories}}
-{% if {{page.categories}} == 'documentation' %}
+{% if page.categories == "documentation" %}
       	[{{ page.title }}]({{site.production_url}}{{ page.url }})      	
 {% endif %}
 {% endfor %}
