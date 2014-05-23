@@ -2,7 +2,7 @@
 layout: index-en
 title: Naming Conventions
 category: Documentation
-categories: [Documentation documentation]
+categories: [documentation]
 group: doc
 tags: doc
 ---
